@@ -1,0 +1,65 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .academics-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .academics-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #0056b3;
+  }
+  
+  .academics-intro {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .section-title {
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: #007acc;
+  }
+  
+  .curriculum-list, .activities-list {
+    list-style-type: disc;
+    margin: 10px 20px;
+    padding: 0;
+  }
+  
+  .curriculum-list li, .activities-list li {
+    margin: 5px 0;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .academics-container {
+      padding: 15px;
+    }
+  
+    .academics-title {
+      font-size: 1.8em;
+    }
+  
+    .section-title {
+      font-size: 1.3em;
+    }
+  }
+  

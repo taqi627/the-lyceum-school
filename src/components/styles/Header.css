@@ -1,0 +1,87 @@
+/* General Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background:url('E:\BSCS V\Web Engineering\The Lyceum School\the lyceum school\src\assets\bg.jpeg'), linear-gradient(rgba(12, 8, 8, 0.1), rgba(0, 0, 0, 0.5)) ; /*linear-gradient(rgba(55, 30, 15, 0.1), rgba(0, 0, 0, 0.5)),  */  /* Overlay gray and set background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(201, 15, 15, 0.1);
+    min-height: 150px;
+}
+
+/* Logo and Title Container */
+.header .logoandtitle {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Consistent spacing */
+}
+
+/* Ensure proper spacing for logo and title */
+.logoandtitle * {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo Styling */
+.header img {
+    width: 70px; /* Fixed size for consistency */
+    height: 70px;
+    border-radius: 50%; /* Circular logo */
+    object-fit: cover; /* Ensure the image is not distorted */
+}
+
+/* Title Styling */
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation Links */
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #53565a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin: 5px;
+    }
+}
